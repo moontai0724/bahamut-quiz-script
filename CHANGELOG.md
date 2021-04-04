@@ -4,7 +4,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [4.1] - 2020-08-19
+## [5.0.0] - 2021-04-04
+### Changed
+- Clean up code
+- Update api
+
+## [4.1.0] - 2020-08-19
 ### Changed
 - 將專案獨立成一個 Repository
 

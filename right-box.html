@@ -1,26 +1,40 @@
 <h5 style="color: #CCFFCC;">動漫電玩通題庫系統</h5>
 <div id="quizrp" class="BH-rbox">
-  <div>系統版本：<span id="quizrp_version"></span></div>
-  <div>查看題庫：<a target="_blank" href="https://goo.gl/k8e7vr">https://goo.gl/k8e7vr</a></div>
-  <div>回報狀態：<span class="quizrp report_status">尚未回報</span></div>
-  <div>自動回答並回報：
-    <span class="quizrp autoanswer_status">若志願提供題庫，按下按鈕開啟此功能。開啟後，當瀏覽至Ｂ頁時，即會自動作答題目。再次按下切換即可關閉功能。目前狀態：</span>
-    <button id="quizrp_autoanswer_switch">切換</button>
+  <div class="version">
+    系統版本：
+    <span></span>
   </div>
-  <div>提示：<button id="quizrp_gethint">獲得提示</button><span id="quizrp_hint"></span></div>
-  <div id="quizrp_show_original">
-    <button id="quizrp_show_original_btn">顯示原題目與答案</button>
-    <div class="quizrp original hidden"></div>
+
+  <div class="database">
+    查看題庫：
+    <a target="_blank" href="https://goo.gl/k8e7vr">https://goo.gl/k8e7vr</a>
+  </div>
+
+  <div class="report">
+    回報狀態：
+    <span>尚未回報</span>
+  </div>
+
+  <div class="auto">
+    自動回答並回報：
+    若志願提供題庫，按下按鈕開啟此功能。開啟後，當瀏覽至Ｂ頁時，即會自動作答題目。再次按下切換即可關閉功能。目前狀態：
+    <span></span>
+    <button>切換</button>
+  </div>
+
+  <div class="hint">
+    提示：
+    <button>獲得提示</button>
+    <span></span>
+  </div>
+
+  <div class="original">
+    <button>顯示原題目與答案</button>
+    <div class="hide"></div>
   </div>
 </div>
 
 <style>
-  #quizrp {
-    padding: 0px 10px 0px 10px;
-    border: 1px solid lightgrey;
-    background-color: #FFFFFF;
-  }
-
   #quizrp>* {
     margin: 10px 0px 10px 0px;
   }
@@ -33,39 +47,49 @@
     margin: 0px 4px 0px 4px;
   }
 
-  .quizrp.autoanswer_status.enable::after {
+  #quizrp .hide {
+    display: none;
+  }
+
+  #quizrp .report span.success,
+  #quizrp .hint span.success {
+    color: green;
+  }
+
+  #quizrp .report span:not(.success),
+  #quizrp .hint span:not(.success) {
+    color: red;
+  }
+
+  #quizrp .auto span.enable:after {
     content: "開啟";
     color: green;
   }
 
-  .quizrp.autoanswer_status:not(.enable):after {
+  #quizrp .auto span:not(.enable):after {
     content: "關閉";
     color: red;
   }
 
-  .quizrp.report_status.success {
-    color: green;
-  }
-
-  .quizrp.report_status:not(.success) {
-    color: red;
-  }
-
-  .quizrp.original {
+  #quizrp .original>div {
     padding: 10px 10px 0px 10px;
     border: 1px solid #cccccc;
   }
 
-  .quizrp.original ol {
+  #quizrp .original ol {
     list-style-type: decimal;
     padding: 10px 0px 10px 30px;
   }
 
-  .quizrp.hidden {
-    display: none;
+  #quizrp .original .correct {
+    color: green;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  #quizrp .original .wrong,
+  .BH-qabox1 .wrong {
+    color: red;
+    text-decoration: line-through;
   }
 </style>
-
-<script>
-  jQuery("#quizrp_html_loaded").click()
-</script>
