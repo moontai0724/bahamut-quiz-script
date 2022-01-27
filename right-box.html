@@ -1,0 +1,95 @@
+<h5 style="color: #CCFFCC;">動漫電玩通題庫系統</h5>
+<div id="quizrp" class="BH-rbox">
+  <div class="version">
+    系統版本：
+    <span></span>
+  </div>
+
+  <div class="database">
+    查看題庫：
+    <a target="_blank" href="https://goo.gl/k8e7vr">https://goo.gl/k8e7vr</a>
+  </div>
+
+  <div class="report">
+    回報狀態：
+    <span>尚未回報</span>
+  </div>
+
+  <div class="auto">
+    自動回答並回報：
+    若志願提供題庫，按下按鈕開啟此功能。開啟後，當瀏覽至Ｂ頁時，即會自動作答題目。再次按下切換即可關閉功能。目前狀態：
+    <span></span>
+    <button>切換</button>
+  </div>
+
+  <div class="hint">
+    提示：
+    <button>獲得提示</button>
+    <span></span>
+  </div>
+
+  <div class="original">
+    <button>顯示原題目與答案</button>
+    <div class="hide"></div>
+  </div>
+</div>
+
+<style>
+  #quizrp>* {
+    margin: 10px 0px 10px 0px;
+  }
+
+  #quizrp a {
+    color: #0055aa;
+  }
+
+  #quizrp button {
+    margin: 0px 4px 0px 4px;
+  }
+
+  #quizrp .hide {
+    display: none;
+  }
+
+  #quizrp .report span.success,
+  #quizrp .hint span.success {
+    color: green;
+  }
+
+  #quizrp .report span:not(.success),
+  #quizrp .hint span:not(.success) {
+    color: red;
+  }
+
+  #quizrp .auto span.enable:after {
+    content: "開啟";
+    color: green;
+  }
+
+  #quizrp .auto span:not(.enable):after {
+    content: "關閉";
+    color: red;
+  }
+
+  #quizrp .original>div {
+    padding: 10px 10px 0px 10px;
+    border: 1px solid #cccccc;
+  }
+
+  #quizrp .original ol {
+    list-style-type: decimal;
+    padding: 10px 0px 10px 30px;
+  }
+
+  #quizrp .original .correct {
+    color: green;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  #quizrp .original .wrong,
+  .BH-qabox1 .wrong {
+    color: red;
+    text-decoration: line-through;
+  }
+</style>
