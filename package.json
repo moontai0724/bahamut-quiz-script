@@ -1,0 +1,16 @@
+{
+  "name": "bahamut-quiz-script",
+  "description": "A script to collect quiz informations when browsing Bahamut forum.",
+  "version": "5.1.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": "git@github.com:moontai0724/bahamut-quiz-script.git",
+  "author": {
+    "name": "moontai0724",
+    "email": "moontai0724@gmail.com",
+    "url": "https://moontai0724.tw"
+  },
+  "license": "MIT"
+}

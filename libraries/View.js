@@ -1,23 +1,3 @@
-// ==UserScript==
-// @name         quizrp-library-view
-// @namespace    https://home.gamer.com.tw/moontai0724
-// @version      5.0.0
-// @description  a library for quizrp project
-// @author       moontai0724
-// @match        https://forum.gamer.com.tw/B.php*
-// @supportURL   https://home.gamer.com.tw/creationDetail.php?sn=3924920
-// @grant        GM_getValue
-// @grant        GM_setValue
-// @grant        GM_deleteValue
-/* globals Database */
-// @require https://greasyfork.org/scripts/424464-quizrp-library-database/code/quizrp-library-database.js
-/* globals Quiz */
-// @require https://greasyfork.org/scripts/424465-quizrp-library-quiz/code/quizrp-library-quiz.js
-/* globals User */
-// @require https://greasyfork.org/scripts/424466-quizrp-library-user/code/quizrp-library-user.js
-// @license      MIT
-// ==/UserScript==
-
 /** @class */
 class View {
   /** @type {HTMLElement} */

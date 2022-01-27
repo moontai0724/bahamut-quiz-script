@@ -1,21 +1,3 @@
-// ==UserScript==
-// @name         quizrp-library-quiz
-// @namespace    https://home.gamer.com.tw/moontai0724
-// @version      5.0.0
-// @description  a library for quizrp project
-// @author       moontai0724
-// @match        https://forum.gamer.com.tw/B.php*
-// @supportURL   https://home.gamer.com.tw/creationDetail.php?sn=3924920
-// @grant        none
-/* globals Database */
-// @require https://greasyfork.org/scripts/424464-quizrp-library-database/code/quizrp-library-database.js
-/* globals User */
-// @require https://greasyfork.org/scripts/424466-quizrp-library-user/code/quizrp-library-user.js
-/* globals View */
-// @require https://greasyfork.org/scripts/424467-quizrp-library-view/code/quizrp-library-view.js
-// @license      MIT
-// ==/UserScript==
-
 /** @class */
 class Quiz {
   /** @type {Number} */

@@ -12,14 +12,6 @@
 // @grant        GM_deleteValue
 // @connect      script.google.com
 // @connect      script.googleusercontent.com
-/* globals Database */
-// @require https://greasyfork.org/scripts/424464-quizrp-library-database/code/quizrp-library-database.js
-/* globals Quiz */
-// @require https://greasyfork.org/scripts/424465-quizrp-library-quiz/code/quizrp-library-quiz.js
-/* globals User */
-// @require https://greasyfork.org/scripts/424466-quizrp-library-user/code/quizrp-library-user.js
-/* globals View */
-// @require https://greasyfork.org/scripts/424467-quizrp-library-view/code/quizrp-library-view.js
 // @resource     quizrp https://raw.githubusercontent.com/moontai0724/bahamut-quiz-script/master/right-box.html
 // @license      MIT
 // ==/UserScript==
