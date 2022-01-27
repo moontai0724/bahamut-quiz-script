@@ -15,16 +15,6 @@
 // @resource     quizrp https://raw.githubusercontent.com/moontai0724/bahamut-quiz-script/master/right-box.html
 // @license      MIT
 // ==/UserScript==
-
-(function () {
-  'use strict';
-
-  document.querySelector(".BH-qabox1").outerHTML += GM_getResourceText("quizrp");
-
-  let user = new User();
-  let quiz = new Quiz();
-  let view = new View(user, quiz);
-})();
 /** @class */
 class Database {
   /** @type {String} */
@@ -326,3 +316,14 @@ class View {
     this.qabox.innerHTML = html;
   }
 }
+
+
+(function () {
+  'use strict';
+
+  document.querySelector(".BH-qabox1").outerHTML += GM_getResourceText("quizrp");
+
+  let user = new User();
+  let quiz = new Quiz();
+  let view = new View(user, quiz);
+})();
