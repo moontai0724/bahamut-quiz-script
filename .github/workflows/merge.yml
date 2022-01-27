@@ -15,10 +15,12 @@ jobs:
       - name: Merge Files
         run: |
           mkdir dist
-          cp main.js dist
+          touch dist/main.user.js
           cp README.md dist
           cp right-box.html dist
-          cat libraries/* >> dist/main.js
+          cat SCRIPT_HEADER.js > dist/main.user.js
+          cat libraries/* >> dist/main.user.js
+          cat main.js >> dist/main.user.js
 
       - name: Deploy
         uses: s0/git-publish-subdir-action@develop
